@@ -1,7 +1,7 @@
 fun main(){
     print("Masukkan nilai kamu:")
-    var nilai = readLine()
-    var number = true
+    val nilai = readLine()
+    val number: Boolean
     number = nilai?.matches("-?\\d+(\\.\\d+)?".toRegex())!!
 
     if (number) {
@@ -19,6 +19,6 @@ fun main(){
         }
     }
     else {
-        println("Inputkan angka")
+        println("Inputkan angka!")
     }
 }
