@@ -5,20 +5,20 @@ fun main(){
     number = nilai?.matches("-?\\d+(\\.\\d+)?".toRegex())!!
 
     if (number) {
-        when{
-            (nilai>=60.toString() || nilai<80.toString()) -> {
+        when(nilai.toInt()){
+            in 60..79 -> {
                 println("Memuaskan")
             }
-            (nilai>=80.toString() || nilai<90.toString()) -> {
+            in 80..89 -> {
                 println("Sangat Memuaskan")
             }
-            (nilai>=90.toString() || nilai<100.toString()) -> {
-                println("Sangat Memuaskan")
+            in 90..99 -> {
+                println("Terpuji")
             }
             else -> println("Tidak lulus")
         }
     }
     else {
-        println("Inputkan angka!")
+        println("Tidak dapat menginputkan selain angka!")
     }
 }

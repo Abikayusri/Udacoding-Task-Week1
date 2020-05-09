@@ -8,7 +8,7 @@ class Nomor3 {
     fun panggil1(a:Int, b:String, c:Double):Int{
         val result = a + b.toInt() + c.toInt()
 
-        println(result)
+        println("Result yang dihasilkan: $result")
         return result
     }
 }
